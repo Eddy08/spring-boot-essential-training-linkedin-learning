@@ -1,0 +1,9 @@
+spring:
+  profiles: dev
+sever:
+  port: 8000
+---
+spring:
+  profiles: test
+sever:
+  port: 9000
