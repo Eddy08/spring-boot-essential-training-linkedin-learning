@@ -1,9 +1,13 @@
 spring:
-  profiles: dev
+  config:
+    activate:
+      on-profile: dev
 sever:
   port: 8000
 ---
 spring:
-  profiles: test
+  config:
+    activate:
+      on-profile: test
 sever:
   port: 9000
