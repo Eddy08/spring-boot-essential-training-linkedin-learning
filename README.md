@@ -28,3 +28,10 @@ spring.config.activate.on-profile=dev
  
 ```
 
+# Challenge: 
+
+## Web Application ( Using a Template Engine Thymleaf try to generate the Application )
+    Important  Details missing:
+        - 1 How to use @Autowired Annoatation for constructor based injection.
+        - 2 Use of Lombok for better code reading.
+## Web Services

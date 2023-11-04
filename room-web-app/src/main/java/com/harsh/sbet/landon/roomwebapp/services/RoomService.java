@@ -14,7 +14,7 @@ public class RoomService {
         for(long i=0;i<10;i++) rooms.add(new Room(i,"Room "+i,"R"+1,"Q"));
     }
 
-    public static List<Room> getAllRooms() {
+    public List<Room> getAllRooms() {
         return rooms;
     }
 }
