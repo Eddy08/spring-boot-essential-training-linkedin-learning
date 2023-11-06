@@ -1,13 +1,15 @@
 package com.harsh.sbet.landon.roomwebapp.services;
 
+import com.harsh.sbet.landon.roomwebapp.data.RoomRepository;
 import com.harsh.sbet.landon.roomwebapp.models.Room;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import java.util.ArrayList;
 import java.util.List;
 
 @Service
 public class RoomService {
+    /* Static Way
     private static final List<Room> rooms= new ArrayList<>();
 
     static{
@@ -17,4 +19,13 @@ public class RoomService {
     public List<Room> getAllRooms() {
         return rooms;
     }
+
+     */
+
+    @Autowired
+    public RoomRepository roomRepository;
+    public List<Room> getAllRooms() {
+        return roomRepository.findAll();
+    }
+
 }

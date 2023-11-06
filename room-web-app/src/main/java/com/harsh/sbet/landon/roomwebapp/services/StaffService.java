@@ -1,15 +1,16 @@
 package com.harsh.sbet.landon.roomwebapp.services;
 
-import com.harsh.sbet.landon.roomwebapp.models.Position;
+import com.harsh.sbet.landon.roomwebapp.data.StaffRepository;
 import com.harsh.sbet.landon.roomwebapp.models.Staff;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import java.util.ArrayList;
 import java.util.List;
-import java.util.UUID;
 
 @Service
 public class StaffService {
+   // For Getting Hardcoded data
+    /*
     public static final List<Staff> staff = new ArrayList<>();
 
  static{
@@ -22,4 +23,12 @@ public class StaffService {
  public List<Staff> getAllStaff(){
      return staff;
  }
+ */
+
+    @Autowired
+    public StaffRepository staffRepository;
+
+    public List<Staff> getAllStaff(){
+        return staffRepository.findAll();
+    }
 }
