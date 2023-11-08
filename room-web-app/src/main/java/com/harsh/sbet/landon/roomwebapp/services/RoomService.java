@@ -28,4 +28,7 @@ public class RoomService {
         return roomRepository.findAll();
     }
 
+    public Room getById(long id) {
+        return roomRepository.findById(id).orElse(new Room());
+    }
 }
