@@ -9,6 +9,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="booting-web" />
         <module name="room-web-app" />
+        <module name="room-cleaner-notifier" />
         <module name="room-clr" />
       </profile>
     </annotationProcessing>
@@ -16,6 +17,7 @@
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="booting-web" options="-parameters" />
+      <module name="room-cleaner-notifier" options="-parameters" />
       <module name="room-clr" options="-parameters" />
       <module name="room-web-app" options="-parameters" />
     </option>

@@ -16,7 +16,7 @@ import org.springframework.context.annotation.Configuration;
 @Configuration
 public class AsyncConfig {
     private static final String QUEUE_NAME="room-cleaner";
-    private static final String EXCHANGE_NAME="operation";
+    private static final String EXCHANGE_NAME="operations";
 
     @Bean
     public Queue queue(){
